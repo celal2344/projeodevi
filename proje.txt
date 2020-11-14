@@ -579,10 +579,10 @@ namespace PROJE
             Console.ForegroundColor = ConsoleColor.DarkGray;
 
             Console.WriteLine("Here we will ask you to enter 3 equations with 3 unknowns in the format 'ax + by + cz = t' \nand we will solve these equations for you using the gauss method.");
+            Console.WriteLine();
             Console.Write("Please enter the coefficent of x in the first equation\n(P.S:To apply the Gauss method,the initial value must not be zero!): ");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             double x1 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine();
             if (x1 == 0)
             {
                 Console.ForegroundColor = ConsoleColor.DarkRed;
@@ -613,6 +613,7 @@ namespace PROJE
             Console.WriteLine("Here is your first equation:");
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine($"{x1}x+{y1}y+{z1}z={t1}");
+            Console.WriteLine();
            
             Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.Write("Please enter the coefficient of x in the second equation: ");
@@ -634,6 +635,7 @@ namespace PROJE
             Console.WriteLine("Here is your second equation:");
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine($"{x2}x+{y2}y+{z2}z={t2}");
+            Console.WriteLine();
             
             Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.Write("Please enter the coefficient of x in the third equation: ");
