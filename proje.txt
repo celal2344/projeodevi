@@ -101,15 +101,15 @@ namespace PROJE
 
             Console.WriteLine();
             Console.WriteLine("The sums of values on each row of the matrix:");
-            Console.Write("First row:");
+            Console.Write("First row: ");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine(rsum1);
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.Write("Second row:");
+            Console.Write("Second row: ");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine(rsum2);
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.Write("Third row:");
+            Console.Write("Third row: ");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine(rsum3);
             Console.ForegroundColor = ConsoleColor.DarkGray;
@@ -123,15 +123,15 @@ namespace PROJE
             Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.WriteLine("The sums of values on each column of the matrix:");
-            Console.Write("First column:");
+            Console.Write("First column: ");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine(csum1);
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.Write("Second column:");
+            Console.Write("Second column: ");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine(csum2);
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.Write("Third column:");
+            Console.Write("Third column: ");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine(csum3);
             Console.ForegroundColor = ConsoleColor.DarkGray;
@@ -141,7 +141,7 @@ namespace PROJE
             double pdsum = a1 + b2 + c3;
 
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.Write("Sum of the values on primary diagonal:");
+            Console.Write("Sum of the values on primary diagonal: ");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.Write(pdsum);
             Console.WriteLine();
@@ -203,14 +203,14 @@ namespace PROJE
             //identity
             if (a1 == 1 && b2 == 1 && c3 == 1 && a2 == 0 && a3 == 0 && b1 == 0 && b3 == 0 && c1 == 0 && c2 == 0)
             {
-                Console.Write("Idenity Matrix:");
+                Console.Write("Idenity Matrix: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.Write("Yes");
                 Console.ForegroundColor = ConsoleColor.DarkGray;
             }
             else
             {
-                Console.Write("Idenity Matrix:");
+                Console.Write("Idenity Matrix: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.Write("No");
                 Console.ForegroundColor = ConsoleColor.DarkGray;
@@ -220,14 +220,14 @@ namespace PROJE
             //Scalar
             if (a1 == b2 && b2 == c3 && a2 == 0 && a3 == 0 && b1 == 0 && b3 == 0 && c1 == 0 && c2 == 0)
             {
-                Console.Write("Scalar Matrix:");
+                Console.Write("Scalar Matrix: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.Write("Yes");
                 Console.ForegroundColor = ConsoleColor.DarkGray;
             }
             else
             {
-                Console.Write("Scalar Matrix:");
+                Console.Write("Scalar Matrix: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.Write("No");
                 Console.ForegroundColor = ConsoleColor.DarkGray;
@@ -237,14 +237,14 @@ namespace PROJE
             //diagonal
             if (a1 == b2 && b2 == c3 && a2 == 0 && a3 == 0 && b1 == 0 && b3 == 0 && c1 == 0 && c2 == 0)
             {
-                Console.Write("Diagonal Matrix:");
+                Console.Write("Diagonal Matrix: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.Write("Yes");
                 Console.ForegroundColor = ConsoleColor.DarkGray;
             }
             else
             {
-                Console.Write("Diagonal Matrix:");
+                Console.Write("Diagonal Matrix: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.Write("No");
                 Console.ForegroundColor = ConsoleColor.DarkGray;
@@ -254,14 +254,14 @@ namespace PROJE
             //zero-one
             if ((a1 == 0 || a1 == 1) && (b1 == 0 || b1 == 1) && (c1 == 0 || c1 == 1) && (a2 == 0 || a2 == 1) && (b2 == 0 || b2 == 1) && (c2 == 0 || c2 == 1) && (a3 == 0 || a3 == 1) && (b3 == 0 || b3 == 1) && (c3 == 0 || c3 == 1))
             {
-                Console.Write("Zero-One Matrix:");
+                Console.Write("Zero-One Matrix: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.Write("Yes");
                 Console.ForegroundColor = ConsoleColor.DarkGray;
             }
             else
             {
-                Console.Write("Zero-One Matrix:");
+                Console.Write("Zero-One Matrix: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.Write("No");
                 Console.ForegroundColor = ConsoleColor.DarkGray;
@@ -271,7 +271,7 @@ namespace PROJE
             //symetric
             if (b1 == a2 && c1 == a3 && c2 == b3)
             {
-                Console.Write("Symetric Matrix:");
+                Console.Write("Symetric Matrix: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.Write("Yes");
                 Console.ForegroundColor = ConsoleColor.DarkGray;
@@ -293,14 +293,14 @@ namespace PROJE
                ((a1 == 0 && b1 == 0 && c1 == 1) && (a2 == 1 && b2 == 0 && c2 == 0) && (a3 == 0 && b3 == 1 && c3 == 0)) ||
                ((a1 == 0 && b1 == 0 && c1 == 1) && (a2 == 0 && b2 == 1 && c2 == 0) && (a3 == 1 && b3 == 0 && c3 == 0)))
             {
-                Console.Write("Permutation Matrix:");
+                Console.Write("Permutation Matrix: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.Write("Yes");
                 Console.ForegroundColor = ConsoleColor.DarkGray;
             }
             else
             {
-                Console.Write("Permutation Matrix:");
+                Console.Write("Permutation Matrix: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.Write("No");
                 Console.ForegroundColor = ConsoleColor.DarkGray;
@@ -327,7 +327,7 @@ namespace PROJE
             {
                 min1 = a1;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
-                Console.Write("The minumum value of first row:");
+                Console.Write("The minumum value of first row: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine(min1);
             }
@@ -335,7 +335,7 @@ namespace PROJE
             {
                 min1 = b1;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
-                Console.Write("The minumum value of first row:");
+                Console.Write("The minumum value of first row: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine(min1);
 
@@ -344,7 +344,7 @@ namespace PROJE
             {
                 min1 = c1;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
-                Console.Write("The minumum value of first row:");
+                Console.Write("The minumum value of first row: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine(min1);
 
@@ -354,7 +354,7 @@ namespace PROJE
             {
                 min2 = a2;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
-                Console.Write("The minumum value of second row:");
+                Console.Write("The minumum value of second row: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine(min2);
             }
@@ -362,7 +362,7 @@ namespace PROJE
             {
                 min2 = b2;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
-                Console.Write("The minumum value of second row:");
+                Console.Write("The minumum value of second row: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine(min2);
 
@@ -371,7 +371,7 @@ namespace PROJE
             {
                 min2 = c2;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
-                Console.Write("The minumum value of second row:");
+                Console.Write("The minumum value of second row: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine(min2);
             }
@@ -384,7 +384,7 @@ namespace PROJE
             {
                 min3 = a3;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
-                Console.Write("The minumum value of third row:");
+                Console.Write("The minumum value of third row: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine(min3);
             }
@@ -392,7 +392,7 @@ namespace PROJE
             {
                 min3 = b3;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
-                Console.Write("The minumum value of third row:");
+                Console.Write("The minumum value of third row: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine(min3);
 
@@ -401,7 +401,7 @@ namespace PROJE
             {
                 min3 = c3;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
-                Console.Write("The minumum value of third row:");
+                Console.Write("The minumum value of third row: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine(min3);
             }
@@ -410,7 +410,7 @@ namespace PROJE
             {
                 max1 = a1;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
-                Console.Write("The maximum value of first column:" + max1);
+                Console.Write("The maximum value of first column: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine(max1);
             }
@@ -419,7 +419,7 @@ namespace PROJE
             {
                 max1 = a2;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
-                Console.Write("The maximum value of first column:");
+                Console.Write("The maximum value of first column: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine(max1);
             }
@@ -427,7 +427,7 @@ namespace PROJE
             {
                 max1 = a3;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
-                Console.Write("The maximum value of first column:");
+                Console.Write("The maximum value of first column: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine(max1);
             }
@@ -436,7 +436,7 @@ namespace PROJE
             {
                 max2 = b1;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
-                Console.Write("The maximum value of second column:");
+                Console.Write("The maximum value of second column: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine(max2);
             }
@@ -445,7 +445,7 @@ namespace PROJE
             {
                 max2 = b2;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
-                Console.Write("The maximum value of second column:");
+                Console.Write("The maximum value of second column: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine(max2);
             }
@@ -453,7 +453,7 @@ namespace PROJE
             {
                 max2 = b3;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
-                Console.Write("The maximum value of second column:");
+                Console.Write("The maximum value of second column: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine(max2);
             }
@@ -463,7 +463,7 @@ namespace PROJE
             {
                 max3 = c1;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
-                Console.Write("The maximum value of third column:");
+                Console.Write("The maximum value of third column: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine(max3);
             }
@@ -472,7 +472,7 @@ namespace PROJE
             {
                 max3 = c2;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
-                Console.Write("The maximum value of third column:");
+                Console.Write("The maximum value of third column: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine(max3);
             }
@@ -480,7 +480,7 @@ namespace PROJE
             {
                 max3 = c3;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
-                Console.Write("The maximum value of third column:");
+                Console.Write("The maximum value of third column: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine(max3);
 
@@ -492,7 +492,7 @@ namespace PROJE
             {
                 minmax = min1;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
-                Console.Write("The maximum of minimum values of each row(minmax):");
+                Console.Write("The maximum of minimum values of each row(minmax): ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine(minmax);
 
@@ -501,7 +501,7 @@ namespace PROJE
             {
                 minmax = min2;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
-                Console.Write("The maximum of minimum values of each row(minmax):");
+                Console.Write("The maximum of minimum values of each row(minmax): ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine(minmax);
             }
@@ -509,7 +509,7 @@ namespace PROJE
             {
                 minmax = min3;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
-                Console.Write("The maximum of minumum values of each row(minmax):");
+                Console.Write("The maximum of minumum values of each row(minmax): ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine(minmax);
             }
@@ -519,7 +519,7 @@ namespace PROJE
             {
                 maxmin = max1;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
-                Console.Write("The minumum of maximum values of each column(maxmin):");
+                Console.Write("The minumum of maximum values of each column(maxmin): ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine(maxmin);
             }
@@ -527,7 +527,7 @@ namespace PROJE
             {
                 maxmin = max2;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
-                Console.Write("The minumum of maximum values of each column(maxmin):");
+                Console.Write("The minumum of maximum values of each column(maxmin): ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine(maxmin);
             }
@@ -535,7 +535,7 @@ namespace PROJE
             {
                 maxmin = max3;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
-                Console.Write("The minumum of maximum values of each column(maxmin):");
+                Console.Write("The minumum of maximum values of each column(maxmin): ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine(maxmin);
             }
@@ -578,7 +578,11 @@ namespace PROJE
 
             Console.ForegroundColor = ConsoleColor.DarkGray;
 
-            Console.WriteLine("Here we will ask you to enter 3 equations with 3 unknowns in the format 'ax + by + cz = t' \nand we will solve these equations for you using the gauss method.");
+            Console.Write("Here we will ask you to enter 3 equations with 3 unknowns in the format ");
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.Write("'ax + by + cz = t' ");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write("\nand we will solve these equations for you using the gauss method.");
             Console.WriteLine();
             Console.Write("Please enter the coefficent of x in the first equation\n(P.S:To apply the Gauss method,the initial value must not be zero!): ");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
