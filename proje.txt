@@ -695,9 +695,10 @@ namespace PROJE
             double newy3 = ((-x3 / x1) * z1) + y3;
             double newz3 = ((-x3 / x1) * z1) + z3;
             double newt3 = ((-x3 / x1) * t1) + t3;
+
+            Console.WriteLine();
             Console.WriteLine("Step 2:" + "(" + (-x3 / x1) + ")" + "*r1" + "+r3->r3");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
-
             Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
             Console.WriteLine("|" + newx2 + " " + newy2 + " " + newz2 + " " + newt2 + "|");
             Console.WriteLine("|" + newx3 + " " + newy3 + " " + newz3 + " " + newt3 + "|");
@@ -707,10 +708,8 @@ namespace PROJE
             double Z = ((-newy3 / newy2) * newz2) + newz3;
             double T = ((-newy3 / newy2) * newt2) + newt3;
 
-
+            Console.WriteLine(  );
             Console.WriteLine("Step 3:" + "(" + (-newy3 / newy2) + ")" + "*r2" + "+r3->r3");
-
-
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
             Console.WriteLine("|" + newx2 + " " + newy2 + " " + newz2 + " " + newt2 + "|");
@@ -719,6 +718,7 @@ namespace PROJE
             double sonucz = T / Z;
             double sonucy = (newt2 - (newz2 * sonucz)) / newy2;
             double sonucx = (t1 - (y1 * sonucy) - (z1 * sonucz)) / x1;
+            
             Console.WriteLine("The value of unknowns(x, y, z):");
             Console.Write("x=");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
