@@ -718,6 +718,7 @@ namespace PROJE
             double sonucz = T / Z;
             double sonucy = (newt2 - (newz2 * sonucz)) / newy2;
             double sonucx = (t1 - (y1 * sonucy) - (z1 * sonucz)) / x1;
+            Console.WriteLine();
             
             Console.WriteLine("The value of unknowns(x, y, z):");
             Console.Write("x=");
