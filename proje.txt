@@ -3,16 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-namespace PROJE
+namespace Project_1
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.WriteLine("Welcome!");
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.WriteLine("WELCOME!");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+
             Console.WriteLine();
             Console.WriteLine("This is a program that does calculations on the 3*3 matrix you will create.");
+
             Console.WriteLine("Press enter to continue.");
             Console.ReadLine();
             Console.ForegroundColor = ConsoleColor.DarkCyan;
@@ -86,9 +89,11 @@ namespace PROJE
             Console.WriteLine("|" + a3 + " " + b3 + " " + "-" + "|");
             Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.Write("Please enter a value for third column of third row: ");
+            double c3 = Convert.ToDouble(Console.ReadLine());
+
             Console.WriteLine("The matrix you entered: ");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
-            double c3 = Convert.ToDouble(Console.ReadLine());
+
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine("|" + a1 + " " + b1 + " " + c1 + "|");
             Console.WriteLine("|" + a2 + " " + b2 + " " + c2 + "|");
@@ -191,14 +196,24 @@ namespace PROJE
             Console.Write($"= {determinant}");
             Console.WriteLine();
 
-            Console.ForegroundColor = ConsoleColor.DarkCyan;
-            Console.WriteLine("\n------------------------------------------------------------------------------------------");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write("\n---------------");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.Write("---------------");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write("---------------");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.Write("---------------");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.Write("---------------");
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.Write("---------------");
             Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.DarkGray;
 
 
 
-            
+
             Console.WriteLine();
             //identity
             if (a1 == 1 && b2 == 1 && c3 == 1 && a2 == 0 && a3 == 0 && b1 == 0 && b3 == 0 && c1 == 0 && c2 == 0)
@@ -307,7 +322,18 @@ namespace PROJE
             }
             Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.DarkCyan;
-            Console.WriteLine("\n------------------------------------------------------------------------------------------");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write("\n---------------");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.Write("---------------");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write("---------------");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.Write("---------------");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.Write("---------------");
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.Write("---------------");
             Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.DarkGray;
 
@@ -567,9 +593,22 @@ namespace PROJE
                 Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.Write("minmax value");
             }
+            Console.WriteLine();
 
             Console.ForegroundColor = ConsoleColor.DarkCyan;
-            Console.WriteLine("\n------------------------------------------------------------------------------------------");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write("\n---------------");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.Write("---------------");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write("---------------");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.Write("---------------");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.Write("---------------");
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.Write("---------------");
+            Console.WriteLine();
             Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.DarkGray;
 
@@ -602,8 +641,11 @@ namespace PROJE
             Console.WriteLine("| 2   3   7   5  |");
             Console.WriteLine("| 1   0  -2   7.5|");
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.Write("If you want to enter the matrix above to entered by default please type yes/no: ");
-            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine();
+            Console.Write("If you want to enter the above matrix to be entered by default,\nPlease type 'yes' or 'no' ");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("without using capital letters:");
+            Console.ForegroundColor = ConsoleColor.Yellow;
             string yesno = Convert.ToString(Console.ReadLine());
             if (yesno == "yes")
             {
@@ -622,20 +664,27 @@ namespace PROJE
             }
             else
             {
+
+
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
+                Console.WriteLine();
+                Console.WriteLine("P.S:To apply the Gauss method,the initial value must not be zero!");
                 Console.ForegroundColor = ConsoleColor.DarkGray;
-                Console.Write("Please enter the coefficent of x in the first equation\n(P.S:To apply the Gauss method,the initial value must not be zero!): ");
+                Console.WriteLine();
+                Console.WriteLine("Please enter the coefficent of x in the first equation:");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
+
                 x1 = Convert.ToDouble(Console.ReadLine());
                 if (x1 == 0)
                 {
-                    Console.ForegroundColor = ConsoleColor.DarkRed;
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("You entered wrong value!If you enter 0 again the application won't work right.\nPlease enter coefficient of x value again:");
                     Console.ForegroundColor = ConsoleColor.DarkGray;
                     x1 = Convert.ToDouble(Console.ReadLine());
 
                     if (x1 == 0)
                     {
-                        Console.ForegroundColor = ConsoleColor.DarkRed;
+                        Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("WRONG VALUE!!!\nPLEASE RESTART THE APPLICATION.");
                         Console.ForegroundColor = ConsoleColor.DarkGray;
                     }
@@ -718,6 +767,8 @@ namespace PROJE
                     Console.ForegroundColor = ConsoleColor.DarkCyan;
                     t1 = Convert.ToDouble(Console.ReadLine());
                     Console.ForegroundColor = ConsoleColor.DarkGray;
+                    Console.WriteLine();
+                    Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.WriteLine("Here is your first equation:");
                     Console.ForegroundColor = ConsoleColor.Blue;
                     Console.WriteLine($"{x1}x+{y1}y+{z1}z={t1}");
@@ -740,6 +791,8 @@ namespace PROJE
                     Console.ForegroundColor = ConsoleColor.DarkCyan;
                     t2 = Convert.ToDouble(Console.ReadLine());
                     Console.ForegroundColor = ConsoleColor.DarkGray;
+                    Console.WriteLine();
+                    Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.WriteLine("Here is your second equation:");
                     Console.ForegroundColor = ConsoleColor.Blue;
                     Console.WriteLine($"{x2}x+{y2}y+{z2}z={t2}");
@@ -762,21 +815,39 @@ namespace PROJE
                     Console.ForegroundColor = ConsoleColor.DarkCyan;
                     t3 = Convert.ToDouble(Console.ReadLine());
                     Console.ForegroundColor = ConsoleColor.DarkGray;
+                    Console.WriteLine();
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+
                     Console.WriteLine("Here is your last equation:");
                     Console.ForegroundColor = ConsoleColor.Blue;
                     Console.WriteLine($"{x3}x+{y3}y+{z3}z={t3}");
 
 
                 }
-                
+
             }
-            
+
             Console.ForegroundColor = ConsoleColor.DarkCyan;
-            Console.WriteLine("\n------------------------------------------------------------------------------------------");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write("\n---------------");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.Write("---------------");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write("---------------");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.Write("---------------");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.Write("---------------");
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.Write("---------------");
+
 
             Console.WriteLine();
-            Console.ForegroundColor = ConsoleColor.DarkGray;
+            
+
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Entered Matrix:");
+            Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
             Console.WriteLine("|" + x1 + " " + y2 + " " + z2 + " " + t2 + "|");
@@ -786,98 +857,136 @@ namespace PROJE
 
             Console.ForegroundColor = ConsoleColor.DarkGray;
             //solution with gauss elimination
+
+
             double newx2 = ((-x2 / x1) * x1) + x2;
             double newy2 = ((-x2 / x1) * y1) + y2;
 
             double newz2 = ((-x2 / x1) * z1) + z2;
             double newt2 = ((-x2 / x1) * t1) + t2;
 
-
+            Console.Write("We will transform the matrix to the ");
+            Console.ForegroundColor = ConsoleColor.Yellow; ;
+            Console.Write("upper triangular form");
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.WriteLine("Step 1:" + "(" + (-x2 / x1) + ")" + "*r1" + "+r2->r2");
+            Console.Write(",then we will reach our results with the equations \nwe have obtained.");
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write("Step 1:" + "(" + (-x2 / x1) + ")" + "*r1" + "+r2->r2");
+            Console.WriteLine();
+            Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
             Console.WriteLine("|" + newx2 + " " + newy2 + " " + newz2 + " " + newt2 + "|");
             Console.WriteLine("|" + x3 + " " + y3 + " " + z3 + " " + t3 + "|");
-            Console.ForegroundColor = ConsoleColor.DarkGray;
+
             double newx3 = ((-x3 / x1) * x1) + x3;
             double newy3 = ((-x3 / x1) * z1) + y3;
             double newz3 = ((-x3 / x1) * z1) + z3;
             double newt3 = ((-x3 / x1) * t1) + t3;
 
             Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Step 2:" + "(" + (-x3 / x1) + ")" + "*r1" + "+r3->r3");
+            Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
             Console.WriteLine("|" + newx2 + " " + newy2 + " " + newz2 + " " + newt2 + "|");
             Console.WriteLine("|" + newx3 + " " + newy3 + " " + newz3 + " " + newt3 + "|");
-            Console.ForegroundColor = ConsoleColor.DarkGray;
+
             double X = ((-newy3 / newy2) * newx2) + newx3;
             double Y = ((-newy3 / newy2) * newy2) + newy3;
             double Z = ((-newy3 / newy2) * newz2) + newz3;
             double T = ((-newy3 / newy2) * newt2) + newt3;
 
             Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Step 3:" + "(" + (-newy3 / newy2) + ")" + "*r2" + "+r3->r3");
+            Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
             Console.WriteLine("|" + newx2 + " " + newy2 + " " + newz2 + " " + newt2 + "|");
             Console.WriteLine("|" + X + " " + Y + " " + Z + " " + T + "|");
-            Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("Press enter to continue.");
+            Console.ReadLine();
 
-            Console.WriteLine("Final equations:");
+
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write("\n---------------");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.Write("---------------");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write("---------------");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.Write("---------------");
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine($"{x1}x + {y1}y + {z1}z = {t1}");
-            Console.WriteLine($"{newy2}y + {newz2}z = {newt2}");
-            Console.WriteLine($"{Z}z = {T}");
+            Console.Write("---------------");
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.Write("---------------");
+
+            Console.ForegroundColor = ConsoleColor.Yellow;
+
+            Console.WriteLine();
+            Console.WriteLine("Final Equations:");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine($"-->{x1}x + {y1}y + {z1}z = {t1}");
+            Console.WriteLine($"-->{newy2}y + {newz2}z = {newt2}");
+            Console.WriteLine($"-->{Z}z = {T}");
 
 
             double sonucz = T / Z;
-            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.Write("->");
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.Write($"First we should divide 3rd rows contant {T} by {Z} to find ");
-            Console.Write("z= ");
+            Console.Write($"First we should divide last equations's constant={T} by coefficent of z={Z} to find z;");
+            Console.WriteLine();
+            Console.Write("\nz= ");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine(sonucz);
 
             Console.WriteLine();
             double sonucy = (newt2 - (newz2 * sonucz)) / newy2;
-            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.Write("->");
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.Write("Now we multiply the value of z with coefficient of z on 2nd row now we are left with");
+            Console.Write("Now we put in place the z value we found in the second equation.When the necessary simplifications are applied,\nwe get the value of y; ");
             Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine();
             Console.Write($"\n{newy2}y + ({sonucz * newz2}) = {newt2} ");
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.Write("from here we can find ");
-            Console.Write("y= ");
+            
+            Console.Write("\ny= ");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine(sonucy);
 
             Console.WriteLine();
             double sonucx = (t1 - (y1 * sonucy) - (z1 * sonucz)) / x1;
-            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.Write("->");
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.Write("At last we know both values of x and y we can multiply these values with their coefficients\non 1st row ");
+            Console.Write("We finally know both the z and y values.Now we will put in place these value to the first equation\nand leave x alone and get the result of all unknowns.");
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.Write($"{x1}x + ({sonucy*newy2}) + ({sonucz*newz2}) = {t1}");
+            Console.WriteLine();
+            Console.Write($"\n{x1}x + ({sonucy * newy2}) + ({sonucz * newz2}) = {t1}");
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.Write(" we can solve this and find ");
-            Console.Write("x= ");
+            
+            Console.Write("\nx=");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine(sonucx);
             Console.WriteLine();
-            
 
 
 
 
+
+
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("The value of unknowns(x, y, z):");
             Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.WriteLine("The value of unknowns(x, y, z):");
             Console.Write("x=");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine(sonucx);
@@ -890,14 +999,37 @@ namespace PROJE
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine(sonucz);
             Console.ForegroundColor = ConsoleColor.DarkGray;
-
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine();
+            Console.WriteLine("Press enter to continue.");
+            Console.ReadLine();
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write("\n---------------");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.Write("---------------");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write("---------------");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.Write("---------------");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.Write("---------------");
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.Write("---------------");
+            Console.WriteLine();
+            Console.WriteLine();
+                
+            Console.WriteLine("END OF THE MATRIX PROJECT.");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine();
+            Console.WriteLine("THIS PROGRAM DESIGNED BY:\nŞULE ALAOĞLU(2019510015)\nGUFRAN GÜNEŞ(2019510042)\nCELAL OZDEMİR(2020510086)");
 
             Console.ReadLine();
 
 
+
+
+
+
         }
-
-
-
     }
 }
