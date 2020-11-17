@@ -707,7 +707,8 @@ namespace PROJE
 
                 }
                 
-            }   
+            }
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine("\n------------------------------------------------------------------------------------------");
 
                 Console.WriteLine();
