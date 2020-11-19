@@ -89,6 +89,7 @@ namespace Project_1
             Console.WriteLine("|" + a3 + " " + b3 + " " + "-" + "|");
             Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.Write("Please enter a value for third column of third row: ");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
             double c3 = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("The matrix you entered: ");
@@ -212,114 +213,158 @@ namespace Project_1
             Console.ForegroundColor = ConsoleColor.DarkGray;
 
 
-
-
             Console.WriteLine();
-            //identity
-            if (a1 == 1 && b2 == 1 && c3 == 1 && a2 == 0 && a3 == 0 && b1 == 0 && b3 == 0 && c1 == 0 && c2 == 0)
-            {
-                Console.Write("Idenity Matrix: ");
-                Console.ForegroundColor = ConsoleColor.DarkCyan;
-                Console.Write("Yes");
-                Console.ForegroundColor = ConsoleColor.DarkGray;
-            }
-            else
-            {
-                Console.Write("Idenity Matrix: ");
-                Console.ForegroundColor = ConsoleColor.DarkCyan;
-                Console.Write("No");
-                Console.ForegroundColor = ConsoleColor.DarkGray;
-            }
-            Console.WriteLine();
+            bool identity = false;
+            bool symmetrical = false;
+            bool diagonal = false;
+            bool scalar = false;
+            bool zeroOne = false;
+            bool permutation = false;
+            bool kontrol1 = false;
+            bool kontrol2 = false;
+            bool kontrol3 = false;
+            bool kontrol4 = false;
 
-            //Scalar
-            if (a1 == b2 && b2 == c3 && a2 == 0 && a3 == 0 && b1 == 0 && b3 == 0 && c1 == 0 && c2 == 0)
-            {
-                Console.Write("Scalar Matrix: ");
-                Console.ForegroundColor = ConsoleColor.DarkCyan;
-                Console.Write("Yes");
-                Console.ForegroundColor = ConsoleColor.DarkGray;
-            }
-            else
-            {
-                Console.Write("Scalar Matrix: ");
-                Console.ForegroundColor = ConsoleColor.DarkCyan;
-                Console.Write("No");
-                Console.ForegroundColor = ConsoleColor.DarkGray;
-            }
-            Console.WriteLine();
+            if (b1==0 && c1==0 && c2==0 && a2==0 && a3==0 && b3 == 0)
+                kontrol1 = true;                                     
+            /*|-  0  0|
+              |0  -  0|
+              |0  0  -|*/
 
-            //diagonal
-            if (a1 == b2 && b2 == c3 && a2 == 0 && a3 == 0 && b1 == 0 && b3 == 0 && c1 == 0 && c2 == 0)
-            {
-                Console.Write("Diagonal Matrix: ");
-                Console.ForegroundColor = ConsoleColor.DarkCyan;
-                Console.Write("Yes");
-                Console.ForegroundColor = ConsoleColor.DarkGray;
-            }
-            else
-            {
-                Console.Write("Diagonal Matrix: ");
-                Console.ForegroundColor = ConsoleColor.DarkCyan;
-                Console.Write("No");
-                Console.ForegroundColor = ConsoleColor.DarkGray;
-            }
-            Console.WriteLine();
-
-            //zero-one
-            if ((a1 == 0 || a1 == 1) && (b1 == 0 || b1 == 1) && (c1 == 0 || c1 == 1) && (a2 == 0 || a2 == 1) && (b2 == 0 || b2 == 1) && (c2 == 0 || c2 == 1) && (a3 == 0 || a3 == 1) && (b3 == 0 || b3 == 1) && (c3 == 0 || c3 == 1))
-            {
-                Console.Write("Zero-One Matrix: ");
-                Console.ForegroundColor = ConsoleColor.DarkCyan;
-                Console.Write("Yes");
-                Console.ForegroundColor = ConsoleColor.DarkGray;
-            }
-            else
-            {
-                Console.Write("Zero-One Matrix: ");
-                Console.ForegroundColor = ConsoleColor.DarkCyan;
-                Console.Write("No");
-                Console.ForegroundColor = ConsoleColor.DarkGray;
-            }
-            Console.WriteLine();
-
-            //symetric
+            if (a1==1 && b2==1 && c3 == 1)
+                kontrol2 = true;
+            /*|1 - -|
+              |- 1 -|
+              |- - 1|*/
+   
+            if (a1 == b2 && b2 == c3)
+                kontrol3 = true;
+            /*|a - -|
+              |- a -|
+              |- - a|*/
+   
             if (b1 == a2 && c1 == a3 && c2 == b3)
-            {
-                Console.Write("Symetric Matrix: ");
-                Console.ForegroundColor = ConsoleColor.DarkCyan;
-                Console.Write("Yes");
-                Console.ForegroundColor = ConsoleColor.DarkGray;
-            }
-            else
-            {
-                Console.Write("Symetric Matrix:");
-                Console.ForegroundColor = ConsoleColor.DarkCyan;
-                Console.Write("No");
-                Console.ForegroundColor = ConsoleColor.DarkGray;
-            }
-            Console.WriteLine();
+                kontrol4 = true;
+            /*|- a b|
+              |a - c|
+              |b c -|*/
+   
+            if (kontrol1 == true)//diagonal
+                diagonal = true;
+   
+            if (kontrol1 == true && kontrol2 == true)//identity
+                identity = true;
+   
+            if (kontrol1 == true && kontrol3 == true)//skaler
+                scalar = true;
 
-            //permutation
+            if (kontrol4 == true)
+                symmetrical = true;
+
+   
+            if ((a1 == 0 || a1 == 1) && (b1 == 0 || b1 == 1) && (c1 == 0 || c1 == 1) && (a2 == 0 || a2 == 1) && (b2 == 0 || b2 == 1) && (c2 == 0 || c2 == 1) && (a3 == 0 || a3 == 1) && (b3 == 0 || b3 == 1) && (c3 == 0 || c3 == 1))
+                zeroOne = true;
+   
             if (((a1 == 1 && b1 == 0 && c1 == 0) && (a2 == 0 && b2 == 1 && c2 == 0) && (a3 == 0 && b3 == 0 && c3 == 1)) ||
                ((a1 == 1 && b1 == 0 && c1 == 0) && (a2 == 0 && b2 == 0 && c2 == 1) && (a3 == 0 && b3 == 1 && c3 == 0)) ||
                ((a1 == 0 && b1 == 1 && c1 == 0) && (a2 == 1 && b2 == 0 && c2 == 0) && (a3 == 0 && b3 == 0 && c3 == 1)) ||
                ((a1 == 0 && b1 == 1 && c1 == 0) && (a2 == 0 && b2 == 0 && c2 == 1) && (a3 == 1 && b3 == 0 && c3 == 0)) ||
                ((a1 == 0 && b1 == 0 && c1 == 1) && (a2 == 1 && b2 == 0 && c2 == 0) && (a3 == 0 && b3 == 1 && c3 == 0)) ||
                ((a1 == 0 && b1 == 0 && c1 == 1) && (a2 == 0 && b2 == 1 && c2 == 0) && (a3 == 1 && b3 == 0 && c3 == 0)))
+                permutation = true;
+
+            if (identity == true)
             {
-                Console.Write("Permutation Matrix: ");
-                Console.ForegroundColor = ConsoleColor.DarkCyan;
-                Console.Write("Yes");
                 Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("Idenity Matrix: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine("Yes");
             }
             else
             {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("Identity Matrix:");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine("No");
+            }   
+
+            if (symmetrical == true)
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("Symmetrical Matrix: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine("Yes");
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("Symmetrical Matrix:");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine("No");
+            }
+
+
+            if (diagonal == true)
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("Diagonal Matrix: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine("Yes");
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("Diagonal Matrix:");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine("No");
+            }
+
+            if (scalar == true)
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("Scalar Matrix: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine("Yes");
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("Scalar Matrix:");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine("No");
+            }
+
+            if (zeroOne == true)
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("Zero-One Matrix: ");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine("Yes");
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("Zero-One Matrix:");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine("No");
+            }
+
+            if (permutation == true)
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.Write("Permutation Matrix: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
-                Console.Write("No");
-                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.WriteLine("Yes");
             }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("Permutation Matrix:");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine("No");
+            }
+
+
             Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.ForegroundColor = ConsoleColor.Red;
@@ -644,10 +689,10 @@ namespace Project_1
             Console.WriteLine();
             Console.Write("If you want to enter the above matrix to be entered by default,\nPlease type 'yes' or 'no' ");
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("without using capital letters:");
-            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write("without using capital letters: ");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
             string yesno = Convert.ToString(Console.ReadLine());
-            if (yesno == "yes")
+            if (yesno == "yes" || yesno=="YES" || yesno=="Yes")
             {
                 x1 = 2;
                 y1 = 1;
@@ -843,7 +888,7 @@ namespace Project_1
 
 
             Console.WriteLine();
-            
+
 
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Entered Matrix:");
@@ -941,7 +986,7 @@ namespace Project_1
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.Write("->");
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.Write($"First we should divide last equations's constant={T} by coefficent of z={Z} to find z;");
+            Console.Write($"First we should divide last equations's constant {T} by coefficent of z={Z} to find z;");
             Console.WriteLine();
             Console.Write("\nz= ");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
@@ -957,7 +1002,7 @@ namespace Project_1
             Console.WriteLine();
             Console.Write($"\n{newy2}y + ({sonucz * newz2}) = {newt2} ");
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            
+
             Console.Write("\ny= ");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine(sonucy);
@@ -972,7 +1017,7 @@ namespace Project_1
             Console.WriteLine();
             Console.Write($"\n{x1}x + ({sonucy * newy2}) + ({sonucz * newz2}) = {t1}");
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            
+
             Console.Write("\nx=");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine(sonucx);
@@ -1017,7 +1062,7 @@ namespace Project_1
             Console.Write("---------------");
             Console.WriteLine();
             Console.WriteLine();
-                
+
             Console.WriteLine("END OF THE MATRIX PROJECT.");
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine();
