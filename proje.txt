@@ -687,9 +687,8 @@ namespace Project_1
             Console.WriteLine("| 1   0  -2   7.5|");
             Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.WriteLine();
-            Console.Write("If you want to enter the above matrix to be entered by default,\nPlease type 'yes' or 'no' ");
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.Write("without using capital letters: ");
+            Console.Write("If you want to enter the above matrix to be entered by default,\nPlease type 'yes' or 'no': ");
+            
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             string yesno = Convert.ToString(Console.ReadLine());
             if (yesno == "yes" || yesno=="YES" || yesno=="Yes")
