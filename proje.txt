@@ -715,7 +715,7 @@ namespace Project_1
                 Console.WriteLine("P.S:To apply the Gauss method,the initial value must not be zero!");
                 Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.WriteLine();
-                Console.WriteLine("Please enter the coefficent of x in the first equation:");
+                Console.Write("Please enter the coefficent of x in the first equation:");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
 
                 x1 = Convert.ToDouble(Console.ReadLine());
