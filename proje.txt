@@ -30,12 +30,12 @@ namespace Project_1
             double c3 = 0;
 
             Console.ForegroundColor = ConsoleColor.DarkCyan;
-            Console.WriteLine("| 5   -2.1  0 |");
+            Console.WriteLine("| 5   -2,1  0 |");
             Console.WriteLine("| 26   11   7 |");
-            Console.WriteLine("| 3.6  0    1 |");
+            Console.WriteLine("| 3,6  0    1 |");
             Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.WriteLine();
-            Console.Write("If you want the matrix above to be entered by default,\nPlease type 'yes' or 'no': ");
+            Console.Write("If you want to enter the matrix above by default,\nPlease type 'yes' or 'no': ");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             string yesno1 = Convert.ToString(Console.ReadLine());
             if (yesno1 == "yes" || yesno1 == "YES" || yesno1 == "Yes")
@@ -127,7 +127,7 @@ namespace Project_1
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                  c3 = Convert.ToDouble(Console.ReadLine());
                 Console.ForegroundColor = ConsoleColor.DarkGray;
-                Console.WriteLine("The matrix you entered: ");
+                Console.WriteLine("Entered matrix: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
 
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
@@ -135,7 +135,14 @@ namespace Project_1
                 Console.WriteLine("|" + a2 + " " + b2 + " " + c2 + "|");
                 Console.WriteLine("|" + a3 + " " + b3 + " " + c3 + "|");
             }
-            
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.WriteLine("Entered matrix: ");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine("|" + a1 + " " + b1 + " " + c1 + "|");
+            Console.WriteLine("|" + a2 + " " + b2 + " " + c2 + "|");
+            Console.WriteLine("|" + a3 + " " + b3 + " " + c3 + "|");
+
             double rsum1 = a1 + b1 + c1;
             double rsum2 = a2 + b2 + c2;
             double rsum3 = a3 + b3 + c3;
@@ -714,16 +721,16 @@ namespace Project_1
             Console.ForegroundColor = ConsoleColor.DarkBlue;
             Console.Write("'ax + by + cz = t' ");
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.Write("\nand we will solve these equations for you using the gauss method.");
+            Console.Write("\nand we will solve these equations for you using the gauss elimination method.");
             Console.WriteLine();
             Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine("| 2   1   1   9  |");
             Console.WriteLine("| 2   3   7   5  |");
-            Console.WriteLine("| 1   0  -2   7.5|");
+            Console.WriteLine("| 1   0  -2   7,5|");
             Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.WriteLine();
-            Console.Write("If you want the matrix above to be entered by default,\nPlease type 'yes' or 'no': ");
+            Console.Write("If you want to enter the matrix above by default,\nPlease type 'yes' or 'no': ");
             
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             string yesno = Convert.ToString(Console.ReadLine());
