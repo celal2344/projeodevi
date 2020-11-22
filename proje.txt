@@ -10,7 +10,7 @@ namespace Project_1
         static void Main(string[] args)
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine(@"                    ______________ ______________
+            Console.WriteLine(@"                     ______________ ______________
                      \__    ___/   |   \_   _____/
                        |    | /    ~    \    __)_ 
                        |    | \    Y    /        \
