@@ -28,13 +28,13 @@ namespace Project_1
                       |    |    |    |   \/    |    \/\__|    | |        \\     \____|    |   
                       |____|    |____|_  /\_______  /\________|/_______  / \______  /|____|   
                                        \/         \/                   \/         \/          ");
-            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine();
             Console.WriteLine("WELCOME!");
             Console.ForegroundColor = ConsoleColor.Yellow;
 
             Console.WriteLine();
             Console.WriteLine("This is a program that does calculations on the 3*3 matrix you will create.");
-
             Console.WriteLine("Press enter to continue.");
             Console.ReadLine();
 
@@ -72,15 +72,15 @@ namespace Project_1
             else
             {
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
-                Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + "|");
-                Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + "|");
-                Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + "|");
+                Console.WriteLine("|" + "a1" + " " + "b1" + " " + "c1" + "|");
+                Console.WriteLine("|" + "a2" + " " + "b2" + " " + "c2" + "|");
+                Console.WriteLine("|" + "a3" + " " + "b3" + " " + "c3" + "|");
                 Console.ForegroundColor = ConsoleColor.DarkGray;
 
                 Console.WriteLine();
                 Console.Write("Firstly we need to create a matrix.Let's start with the first value in the first row: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
-                 a1 = Convert.ToDouble(Console.ReadLine());
+                a1 = Convert.ToDouble(Console.ReadLine());
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine("|" + a1 + " " + "-" + " " + "-" + "|");
                 Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + "|");
@@ -88,7 +88,7 @@ namespace Project_1
                 Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.Write("Please enter a value for second column of the first row: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
-                 b1 = Convert.ToDouble(Console.ReadLine());
+                b1 = Convert.ToDouble(Console.ReadLine());
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine("|" + a1 + " " + b1 + " " + "-" + "|");
                 Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + "|");
@@ -96,7 +96,7 @@ namespace Project_1
                 Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.Write("Please enter a value for third column of first row: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
-                 c1 = Convert.ToDouble(Console.ReadLine());
+                c1 = Convert.ToDouble(Console.ReadLine());
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine("|" + a1 + " " + b1 + " " + c1 + "|");
                 Console.WriteLine("|" + "-" + " " + "-" + " " + "-" + "|");
@@ -104,7 +104,7 @@ namespace Project_1
                 Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.Write("The first row is completed.Please enter a value for first column the second row: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
-                 a2 = Convert.ToDouble(Console.ReadLine());
+                a2 = Convert.ToDouble(Console.ReadLine());
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine("|" + a1 + " " + b1 + " " + c1 + "|");
                 Console.WriteLine("|" + a2 + " " + "-" + " " + "-" + "|");
@@ -112,7 +112,7 @@ namespace Project_1
                 Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.Write("Please enter a value for second column of the second row : ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
-                 b2 = Convert.ToDouble(Console.ReadLine());
+                b2 = Convert.ToDouble(Console.ReadLine());
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine("|" + a1 + " " + b1 + " " + c1 + "|");
                 Console.WriteLine("|" + a2 + " " + b2 + " " + "-" + "|");
@@ -120,7 +120,7 @@ namespace Project_1
                 Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.Write("Please enter a value for third column of the second row: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
-                 c2 = Convert.ToDouble(Console.ReadLine());
+                c2 = Convert.ToDouble(Console.ReadLine());
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine("|" + a1 + " " + b1 + " " + c1 + "|");
                 Console.WriteLine("|" + a2 + " " + b2 + " " + c2 + "|");
@@ -128,7 +128,7 @@ namespace Project_1
                 Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.Write("The second row is completed.Please enter a value for first column the third row: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
-                 a3 = Convert.ToDouble(Console.ReadLine());
+                a3 = Convert.ToDouble(Console.ReadLine());
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine("|" + a1 + " " + b1 + " " + c1 + "|");
                 Console.WriteLine("|" + a2 + " " + b2 + " " + c2 + "|");
@@ -136,7 +136,7 @@ namespace Project_1
                 Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.Write("Please enter a value for second column of the third row: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
-                 b3 = Convert.ToDouble(Console.ReadLine());
+                b3 = Convert.ToDouble(Console.ReadLine());
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine("|" + a1 + " " + b1 + " " + c1 + "|");
                 Console.WriteLine("|" + a2 + " " + b2 + " " + c2 + "|");
@@ -144,7 +144,7 @@ namespace Project_1
                 Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.Write("Please enter a value for third column of third row: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
-                 c3 = Convert.ToDouble(Console.ReadLine());
+                c3 = Convert.ToDouble(Console.ReadLine());
                 Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.WriteLine("Entered matrix: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
@@ -287,46 +287,46 @@ namespace Project_1
             bool control3 = false;
             bool control4 = false;
 
-            if (b1==0 && c1==0 && c2==0 && a2==0 && a3==0 && b3 == 0)
-                control1 = true;                                     
+            if (b1 == 0 && c1 == 0 && c2 == 0 && a2 == 0 && a3 == 0 && b3 == 0)
+                control1 = true;
             /*|-  0  0|
               |0  -  0|
               |0  0  -|*/
 
-            if (a1==1 && b2==1 && c3 == 1)
+            if (a1 == 1 && b2 == 1 && c3 == 1)
                 control2 = true;
             /*|1 - -|
               |- 1 -|
               |- - 1|*/
-   
+
             if (a1 == b2 && b2 == c3)
                 control3 = true;
             /*|a - -|
               |- a -|
               |- - a|*/
-   
+
             if (b1 == a2 && c1 == a3 && c2 == b3)
                 control4 = true;
             /*|- a b|
               |a - c|
               |b c -|*/
-   
+
             if (control1 == true)//diagonal
                 diagonal = true;
-   
+
             if (control1 == true && control2 == true)//identity
                 identity = true;
-   
+
             if (control1 == true && control3 == true)//skaler
                 scalar = true;
 
             if (control4 == true)
                 symmetrical = true;
 
-   
+
             if ((a1 == 0 || a1 == 1) && (b1 == 0 || b1 == 1) && (c1 == 0 || c1 == 1) && (a2 == 0 || a2 == 1) && (b2 == 0 || b2 == 1) && (c2 == 0 || c2 == 1) && (a3 == 0 || a3 == 1) && (b3 == 0 || b3 == 1) && (c3 == 0 || c3 == 1))
                 zeroOne = true;
-   
+
             if (((a1 == 1 && b1 == 0 && c1 == 0) && (a2 == 0 && b2 == 1 && c2 == 0) && (a3 == 0 && b3 == 0 && c3 == 1)) ||
                ((a1 == 1 && b1 == 0 && c1 == 0) && (a2 == 0 && b2 == 0 && c2 == 1) && (a3 == 0 && b3 == 1 && c3 == 0)) ||
                ((a1 == 0 && b1 == 1 && c1 == 0) && (a2 == 1 && b2 == 0 && c2 == 0) && (a3 == 0 && b3 == 0 && c3 == 1)) ||
@@ -348,7 +348,7 @@ namespace Project_1
                 Console.Write("Identity Matrix:");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine("No");
-            }   
+            }
 
             if (symmetrical == true)
             {
@@ -513,7 +513,7 @@ namespace Project_1
             //min3
 
 
-            if ((a3 <= b3) && (a3 <= c3))
+            if ((a3 <= b3) && (a3 <= c3)) 
             {
                 min3 = a3;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
@@ -750,10 +750,10 @@ namespace Project_1
             Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.WriteLine();
             Console.Write("If you want to enter the matrix above by default,\nPlease type 'yes' or 'no': ");
-            
+
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             string yesno = Convert.ToString(Console.ReadLine());
-            if (yesno == "yes" || yesno=="YES" || yesno=="Yes")
+            if (yesno == "yes" || yesno == "YES" || yesno == "Yes")
             {
                 x1 = 2;
                 y1 = 1;
@@ -964,7 +964,7 @@ namespace Project_1
             //solution with gauss elimination
             Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.WriteLine("giriş cümlesi  ");
-            
+
             Console.WriteLine();
             //R1*(1/x1)->R1
             Console.ForegroundColor = ConsoleColor.Yellow;
@@ -993,7 +993,7 @@ namespace Project_1
             Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.Write($"ilk kolonun ikinci elemanını 0 yapmak için birinci denklemin {-x2} katını");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
-            Console.Write($"({x1*-x2}x+{y1*-x2}y+{z1*-x2}z={t1*-x2})");
+            Console.Write($"({x1 * -x2}x+{y1 * -x2}y+{z1 * -x2}z={t1 * -x2})");
             Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.WriteLine(" 2. denkleme ekliyoruz");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
@@ -1018,7 +1018,7 @@ namespace Project_1
             Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.Write($"ilk kolonun son elemanını 0 yapmak için tekrar birinci denklemin {-x3} katını");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
-            Console.Write($"({x1*-x3}x+{y1*-x3}y+{z1*-x3}z={t1*-x3})");
+            Console.Write($"({x1 * -x3}x+{y1 * -x3}y+{z1 * -x3}z={t1 * -x3})");
             Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.WriteLine(" 3. denkleme ekliyoruz");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
@@ -1041,7 +1041,7 @@ namespace Project_1
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.Write("4.adım ");
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.WriteLine($"artık 2 kolona geçtik 2 kolonda 2 elemanı 1 yapmamız gerekiyor bunun için ikinci denklemi {1/y2} ile çarpıyoruz");
+            Console.WriteLine($"artık 2 kolona geçtik 2 kolonda 2 elemanı 1 yapmamız gerekiyor bunun için ikinci denklemi {1 / y2} ile çarpıyoruz");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
             Console.WriteLine("|" + x2 + " [" + y2 + "] " + z2 + " " + t2 + "|");
@@ -1064,12 +1064,12 @@ namespace Project_1
             Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.Write($"2. kolonun son elemanını ise 0 yapmalıyız bunun için ikinci denklemin {-y3} katını");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
-            Console.Write($"({x1*-y3}x+{y1*-y3}y+{z1*-y3}z={t1*-y3})");
+            Console.Write($"({x1 * -y3}x+{y1 * -y3}y+{z1 * -y3}z={t1 * -y3})");
             Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.WriteLine(" üçüncü denkleme ekliyoruz");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
-            Console.WriteLine("|" + x2 + " " +  y2 +  " " + z2 + " " + t2 + "|");
+            Console.WriteLine("|" + x2 + " " + y2 + " " + z2 + " " + t2 + "|");
             Console.WriteLine("|" + x3 + " [" + y3 + "] " + z3 + " " + t3 + "|");
             x3 = (-y3 * x2) + x3;//x3=0
             z3 = (-y3 * z2) + z3;//z3=(-y3)*(((-x2)(z1/x2)+z2)(1/y2))+(-x3)(z1/x1)+z3
@@ -1087,11 +1087,11 @@ namespace Project_1
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.Write("6.adım ");
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.WriteLine($"son olarak 3. kolonun son elemanını 1 e eşitlememiz gerekiyor bunun için 3. denklemi {1/z3} ile çarpıyoruz");
+            Console.WriteLine($"son olarak 3. kolonun son elemanını 1 e eşitlememiz gerekiyor bunun için 3. denklemi {1 / z3} ile çarpıyoruz");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
             Console.WriteLine("|" + x2 + " " + y2 + " " + z2 + " " + t2 + "|");
-            Console.WriteLine("|" + x3 + " " +  y3  + " [" + z3 + "] " + t3 + "|"); 
+            Console.WriteLine("|" + x3 + " " + y3 + " [" + z3 + "] " + t3 + "|");
             x3 = (1 / z3) * x3;//x3=0
             y3 = (1 / z3) * y3;//y3=0
             t3 = (1 / z3) * t3;//t3=((-y3)*(((-x2)(t1/x1)+t2)(1/y2))+(-x3)(t1/x1)+t3)*(1/z3)
@@ -1112,10 +1112,10 @@ namespace Project_1
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
             Console.WriteLine("|" + x2 + " " + y2 + " " + z2 + " " + t2 + "|");
-            Console.WriteLine("|" + x3 + " " + y3 + " " +  z3 +  " ["+ t3 +  "]|");
+            Console.WriteLine("|" + x3 + " " + y3 + " " + z3 + " [" + t3 + "]|");
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("//////////////////");
-            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine($"z={t3}");
 
             Console.WriteLine();
@@ -1125,14 +1125,12 @@ namespace Project_1
             Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.WriteLine($"y yi bulmak için z sabitinin değerini yerine koyup ikinci denklemi çözüyoruz");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("//////////////////");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine($"{y2}y+[({z2})*({t3})] = {t2}");
             Console.WriteLine($"{y2}y = {t2}-[({z2})*({t3})]");
             t2 = t2 - (z2 * t3);
             Console.WriteLine($"y={t2}");
-            
+
 
             Console.WriteLine();
             //x=t1
@@ -1140,8 +1138,6 @@ namespace Project_1
             Console.Write("9.adım ");
             Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.WriteLine($"son olarak x değerini bulmak için zaten bildiğimiz y ve z sabitlerinin değerlerini birinci denklemde yerin koyup çözüyoruz");
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("//////////////////");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine($"{x1}x+({y1})*({t2})+({z1})*({t3}) = {t1}");
             Console.WriteLine($"{x1}x = {t1}-[({y1})*({t2})+({z1})*({t3})]");
