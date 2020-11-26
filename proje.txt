@@ -344,7 +344,7 @@ namespace Project_1
             else
             {
                 Console.ForegroundColor = ConsoleColor.DarkGray;
-                Console.Write("Identity Matrix:");
+                Console.Write("Identity Matrix: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine("No");
             }
@@ -359,7 +359,7 @@ namespace Project_1
             else
             {
                 Console.ForegroundColor = ConsoleColor.DarkGray;
-                Console.Write("Symmetrical Matrix:");
+                Console.Write("Symmetrical Matrix: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine("No");
             }
@@ -375,7 +375,7 @@ namespace Project_1
             else
             {
                 Console.ForegroundColor = ConsoleColor.DarkGray;
-                Console.Write("Diagonal Matrix:");
+                Console.Write("Diagonal Matrix: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine("No");
             }
@@ -390,7 +390,7 @@ namespace Project_1
             else
             {
                 Console.ForegroundColor = ConsoleColor.DarkGray;
-                Console.Write("Scalar Matrix:");
+                Console.Write("Scalar Matrix: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine("No");
             }
@@ -405,7 +405,7 @@ namespace Project_1
             else
             {
                 Console.ForegroundColor = ConsoleColor.DarkGray;
-                Console.Write("Zero-One Matrix:");
+                Console.Write("Zero-One Matrix: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine("No");
             }
@@ -420,7 +420,7 @@ namespace Project_1
             else
             {
                 Console.ForegroundColor = ConsoleColor.DarkGray;
-                Console.Write("Permutation Matrix:");
+                Console.Write("Permutation Matrix: ");
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine("No");
             }
