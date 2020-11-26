@@ -9,7 +9,7 @@ namespace Project_1
     {
         static void Main(string[] args)
         {
-            Console.ForegroundColor = ConsoleColor.Red;
+            Console.ForegroundColor = ConsoleColor.Magenta;
             Console.WriteLine(@"                     ______________ ______________
                      \__    ___/   |   \_   _____/
                        |    | /    ~    \    __)_ 
@@ -271,10 +271,9 @@ namespace Project_1
             Console.Write("---------------");
             Console.ForegroundColor = ConsoleColor.Magenta;
             Console.Write("---------------");
-            Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.DarkGray;
 
-
+            Console.WriteLine();
             Console.WriteLine();
             bool identity = false;
             bool symmetrical = false;
@@ -427,7 +426,6 @@ namespace Project_1
             }
 
 
-            Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.ForegroundColor = ConsoleColor.Red;
             Console.Write("\n---------------");
@@ -441,8 +439,8 @@ namespace Project_1
             Console.Write("---------------");
             Console.ForegroundColor = ConsoleColor.Magenta;
             Console.Write("---------------");
-            Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.WriteLine();
 
             //GROUP C
             double min1, min2, min3, max1, max2, max3, minmax, maxmin;
@@ -513,7 +511,7 @@ namespace Project_1
             //min3
 
 
-            if ((a3 <= b3) && (a3 <= c3)) 
+            if ((a3 <= b3) && (a3 <= c3))
             {
                 min3 = a3;
                 Console.ForegroundColor = ConsoleColor.DarkGray;
@@ -716,8 +714,8 @@ namespace Project_1
             Console.ForegroundColor = ConsoleColor.Magenta;
             Console.Write("---------------");
             Console.WriteLine();
-            Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.WriteLine();
 
             ///Group D
 
@@ -774,7 +772,7 @@ namespace Project_1
 
                 Console.ForegroundColor = ConsoleColor.DarkYellow;
                 Console.WriteLine();
-                Console.WriteLine("P.S:To apply the Gauss method,the initial value must not be zero!");
+                Console.WriteLine("P.S.:To apply the Gauss method,the initial value must not be zero!");
                 Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.WriteLine();
                 Console.Write("Please enter the coefficent of x in the first equation: ");
@@ -946,7 +944,7 @@ namespace Project_1
             Console.Write("---------------");
             Console.ForegroundColor = ConsoleColor.Magenta;
             Console.Write("---------------");
-
+            Console.WriteLine();
 
             Console.WriteLine();
 
@@ -963,14 +961,20 @@ namespace Project_1
 
             //solution with gauss elimination
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.WriteLine("giriş cümlesi  ");
+            Console.Write("We will transform the matrix to the ");
+            Console.ForegroundColor = ConsoleColor.Yellow; ;
+            Console.Write("row echelon form");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write(",then we will reach our unknowns' results.");
+            Console.WriteLine();
 
             Console.WriteLine();
             //R1*(1/x1)->R1
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.Write("1.adım ");
+            Console.WriteLine("->Step 1." + (1 / x1) + "*r1=r1");
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.WriteLine($"ilk kolonun ilk elemanını 1 yapmak için ilk denklemi 1/{x1} ile çarpıyoruz. ");
+            Console.WriteLine($"We multiply the first equation by 1/{x1} to make the first value of the first column.");
+            Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine("|[" + x1 + "] " + y1 + " " + z1 + " " + t1 + "|");
             Console.WriteLine("|" + x2 + " " + y2 + " " + z2 + " " + t2 + "|");
@@ -980,7 +984,7 @@ namespace Project_1
             t1 = (1 / x1) * t1;//t1=t1/x1
             x1 = (1 / x1) * x1;//x1=1
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("//////////////////");
+            Console.WriteLine("->");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine("|[" + x1 + "] " + y1 + " " + z1 + " " + t1 + "|");
             Console.WriteLine("|" + x2 + " " + y2 + " " + z2 + " " + t2 + "|");
@@ -989,13 +993,14 @@ namespace Project_1
             Console.WriteLine();
             //R1*(-x2)+R2->R2
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.Write("2.adım ");
+            Console.WriteLine("->Step 2." + (-x2) + "*r1+r2=r2");
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.Write($"ilk kolonun ikinci elemanını 0 yapmak için birinci denklemin {-x2} katını");
+            Console.Write($"For make the second value of the first column 0,\nWe add first equation's {-x2} times");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
-            Console.Write($"({x1 * -x2}x+{y1 * -x2}y+{z1 * -x2}z={t1 * -x2})");
+            Console.WriteLine($"({x1 * -x2}x+{y1 * -x2}y+{z1 * -x2}z={t1 * -x2})");
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.WriteLine(" 2. denkleme ekliyoruz");
+            Console.WriteLine("to second equation.");
+            Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
             Console.WriteLine("|[" + x2 + "] " + y2 + " " + z2 + " " + t2 + "|");
@@ -1005,7 +1010,7 @@ namespace Project_1
             t2 = (-x2 * t1) + t2;//t2=(-x2)(t1/x1)+t2
             x2 = (-x2 * 1) + x2;//x2=0
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("//////////////////");
+            Console.WriteLine("->");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
             Console.WriteLine("|[" + x2 + "] " + y2 + " " + z2 + " " + t2 + "|");
@@ -1014,14 +1019,15 @@ namespace Project_1
             Console.WriteLine();
             //(-x3)*R1+R3->R3
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.Write("3.adım ");
+            Console.WriteLine("->Step 3." + x3 + "*r1+r3=r3");
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.Write($"ilk kolonun son elemanını 0 yapmak için tekrar birinci denklemin {-x3} katını");
+            Console.Write($"For make third value of the first column 0,\nwe add first equation's {-x3} times");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.Write($"({x1 * -x3}x+{y1 * -x3}y+{z1 * -x3}z={t1 * -x3})");
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.WriteLine(" 3. denkleme ekliyoruz");
+            Console.WriteLine("to third equation.");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine();
             Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
             Console.WriteLine("|" + x2 + " " + y2 + " " + z2 + " " + t2 + "|");
             Console.WriteLine("|[" + x3 + "] " + y3 + " " + z3 + " " + t3 + "|");
@@ -1030,7 +1036,7 @@ namespace Project_1
             t3 = (-x3 * t1) + t3;//t3=(-x3)(t1/x1)+t3
             x3 = (-x3 * 1) + x3;//x3=0
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("//////////////////");
+            Console.WriteLine("->");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
             Console.WriteLine("|" + x2 + " " + y2 + " " + z2 + " " + t2 + "|");
@@ -1039,10 +1045,11 @@ namespace Project_1
             Console.WriteLine();
             //(1/y2)*R2->R2
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.Write("4.adım ");
+            Console.WriteLine("->Step 4." + (1 / y1) + "*r2=r2");
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.WriteLine($"artık 2 kolona geçtik 2 kolonda 2 elemanı 1 yapmamız gerekiyor bunun için ikinci denklemi {1 / y2} ile çarpıyoruz");
+            Console.WriteLine($"Now we have passed to the 2nd column.\nIn the 2nd column,we need to make the 2nd value 1,so we multiply the second equation by {1 / y2}.");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine();
             Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
             Console.WriteLine("|" + x2 + " [" + y2 + "] " + z2 + " " + t2 + "|");
             Console.WriteLine("|" + x3 + " " + y3 + " " + z3 + " " + t3 + "|");
@@ -1051,7 +1058,7 @@ namespace Project_1
             t2 = (1 / y2) * t2;//t2=((-x2)(t1/x1)+t2)(1/y2)
             y2 = (1 / y2) * y2;//y2=1
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("//////////////////");
+            Console.WriteLine("->");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
             Console.WriteLine("|" + x2 + " [" + y2 + "] " + z2 + " " + t2 + "|");
@@ -1060,13 +1067,14 @@ namespace Project_1
             Console.WriteLine();
             //(-y3)R2+R3->R3
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.Write("5.adım ");
+            Console.WriteLine("->Step 5." + (-y3) + "*r2+r3=r3");
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.Write($"2. kolonun son elemanını ise 0 yapmalıyız bunun için ikinci denklemin {-y3} katını");
+            Console.Write($"For make third value of the second column 0,we add first equation's {-y3} times");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.Write($"({x1 * -y3}x+{y1 * -y3}y+{z1 * -y3}z={t1 * -y3})");
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.WriteLine(" üçüncü denkleme ekliyoruz");
+            Console.WriteLine(" to third equation.");
+            Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
             Console.WriteLine("|" + x2 + " " + y2 + " " + z2 + " " + t2 + "|");
@@ -1076,7 +1084,7 @@ namespace Project_1
             t3 = (-y3 * t2) + t3;//t3=(-y3)*(((-x2)(t1/x1)+t2)(1/y2))+(-x3)(t1/x1)+t3
             y3 = (-y3 * y2) + y3;//y3=0
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("//////////////////");
+            Console.WriteLine("->");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
             Console.WriteLine("|" + x2 + " " + y2 + " " + z2 + " " + t2 + "|");
@@ -1085,10 +1093,11 @@ namespace Project_1
             Console.WriteLine();
             //(1/z3)*R3->R3
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.Write("6.adım ");
+            Console.WriteLine("->Step 6." + (1 / z3) + "*r3=r3");
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.WriteLine($"son olarak 3. kolonun son elemanını 1 e eşitlememiz gerekiyor bunun için 3. denklemi {1 / z3} ile çarpıyoruz");
+            Console.WriteLine($"Finally we need to make the third value of the 3rd column equal to 1,so we multiply the 3rd equation by {1 / z3}.");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine();
             Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
             Console.WriteLine("|" + x2 + " " + y2 + " " + z2 + " " + t2 + "|");
             Console.WriteLine("|" + x3 + " " + y3 + " [" + z3 + "] " + t3 + "|");
@@ -1097,7 +1106,7 @@ namespace Project_1
             t3 = (1 / z3) * t3;//t3=((-y3)*(((-x2)(t1/x1)+t2)(1/y2))+(-x3)(t1/x1)+t3)*(1/z3)
             z3 = (1 / z3) * z3;//z3=1
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("//////////////////");
+            Console.WriteLine("->");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
             Console.WriteLine("|" + x2 + " " + y2 + " " + z2 + " " + t2 + "|");
@@ -1106,41 +1115,46 @@ namespace Project_1
             Console.WriteLine();
             //z=t3
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.Write("7.adım ");
+            Console.WriteLine("->Step 7. " + z3 + "z" + "=" + t3);
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.WriteLine($"artık son denklemden z sabitinin değerinin {t3} olduğunu biliyoruz z değerini ikinci denklemde yerine koyup y değerini bulabiliriz");
+            Console.WriteLine($"We now know from the last equation that the value of z is {t3}.");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine();
             Console.WriteLine("|" + x1 + " " + y1 + " " + z1 + " " + t1 + "|");
             Console.WriteLine("|" + x2 + " " + y2 + " " + z2 + " " + t2 + "|");
             Console.WriteLine("|" + x3 + " " + y3 + " " + z3 + " [" + t3 + "]|");
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("//////////////////");
+            Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine($"z={t3}");
 
             Console.WriteLine();
             //y=t2
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.Write("8.adım ");
+            Console.WriteLine("->Step 8." + y2 + "y" + z2 + "z=" + t2);
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.WriteLine($"y yi bulmak için z sabitinin değerini yerine koyup ikinci denklemi çözüyoruz");
+            Console.WriteLine($"We substitute the value of the unknown z in the second equation to find the unknown value of y.");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine();
             Console.WriteLine($"{y2}y+[({z2})*({t3})] = {t2}");
             Console.WriteLine($"{y2}y = {t2}-[({z2})*({t3})]");
             t2 = t2 - (z2 * t3);
+            Console.WriteLine();
             Console.WriteLine($"y={t2}");
 
 
             Console.WriteLine();
             //x=t1
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.Write("9.adım ");
+            Console.WriteLine("->Step 9." + x1 + "x" + t2 + "y" + t3 + "z=" + t1);
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.WriteLine($"son olarak x değerini bulmak için zaten bildiğimiz y ve z sabitlerinin değerlerini birinci denklemde yerin koyup çözüyoruz");
+            Console.WriteLine($"Finally,to find the value of x,we substitute in first equation the values of y and z and solve it.");
             Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine();
             Console.WriteLine($"{x1}x+({y1})*({t2})+({z1})*({t3}) = {t1}");
             Console.WriteLine($"{x1}x = {t1}-[({y1})*({t2})+({z1})*({t3})]");
+            Console.WriteLine();
             t1 = t1 - ((t2 * y1) + (t3 * z1));
             Console.WriteLine($"x={t1}");
 
@@ -1149,7 +1163,7 @@ namespace Project_1
 
 
 
-
+            Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.WriteLine();
             Console.WriteLine("Press enter to continue.");
             Console.ReadLine();
@@ -1171,7 +1185,7 @@ namespace Project_1
             Console.WriteLine("END OF THE MATRIX PROJECT.");
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine();
-            Console.WriteLine("THIS PROGRAM DESIGNED BY:\nŞULE ALAOĞLU(2019510015)\nGUFRAN GÜNEŞ(2019510042)\nCELAL OZDEMİR(2020510086)");
+            Console.WriteLine("THIS PROGRAM DESIGNED BY:\n HATİCE ŞULE ALAOĞLU(2019510015)\nGUFRAN GÜNEŞ(2019510042)\nCELAL OZDEMİR(2020510086)");
 
             Console.ReadLine();
 
