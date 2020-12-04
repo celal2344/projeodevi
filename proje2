@@ -46,7 +46,7 @@ namespace proje_2
             while (true)
             {
                 cki = Console.ReadKey(true);
-                if (cki.Key == ConsoleKey.UpArrow)
+                if (cki.Key == ConsoleKey.UpArrow && y>2)
                 {
                     Console.SetCursorPosition(x, y);
                     Console.WriteLine(" ");
